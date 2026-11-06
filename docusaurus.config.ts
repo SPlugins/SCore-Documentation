@@ -1,8 +1,56 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import type {PluginOptions} from '@docusaurus/plugin-content-docs';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+type SidebarItemsGenerator = PluginOptions['sidebarItemsGenerator'];
+type SidebarItems = Awaited<ReturnType<SidebarItemsGenerator>>;
+type SidebarItem = SidebarItems[number];
+
+const collator = new Intl.Collator(undefined, {
+  numeric: true, // "Step 2" before "Step 10"
+  sensitivity: 'base', // case-insensitive
+});
+
+const sidebarItemsGenerator: SidebarItemsGenerator = async ({
+  defaultSidebarItemsGenerator,
+  docs,
+  ...args
+}) => {
+  const items = await defaultSidebarItemsGenerator({docs, ...args});
+
+  // Generated doc items often have no label, so fall back to the doc title
+  const docTitles = new Map(docs.map((doc) => [doc.id, doc.title]));
+
+  const getLabel = (item: SidebarItem): string => {
+    if (item.type === 'doc' || item.type === 'ref') {
+      return item.label ?? docTitles.get(item.id) ?? item.id;
+    }
+    if (item.type === 'link' || item.type === 'category') {
+      return item.label;
+    }
+    return '';
+  };
+
+  const byLabel = (a: SidebarItem, b: SidebarItem) =>
+    collator.compare(getLabel(a), getLabel(b));
+
+  // Plain items A-Z first, then categories A-Z (applied recursively)
+  const reorder = (list: SidebarItems): SidebarItems => {
+    const mapped = list.map((item) =>
+      item.type === 'category'
+        ? {...item, items: reorder(item.items)}
+        : item,
+    );
+    return [
+      ...mapped.filter((item) => item.type !== 'category').sort(byLabel),
+      ...mapped.filter((item) => item.type === 'category').sort(byLabel),
+    ];
+  };
+
+  return reorder(items);
+};
+
 
 const config: Config = {
   title: 'SCore Documentation',
@@ -44,6 +92,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          sidebarItemsGenerator,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:

@@ -1,4 +1,4 @@
-# Command Executions
+# ⚡ Command Executions
 
 :::info
 This flowchart will help you on where to look if you want to debug the code flow of when a command
