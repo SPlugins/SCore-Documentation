@@ -102,3 +102,7 @@ flowchart TD
     pInfoOpt["Optional<ProjectileInfo> pInfoOpt = ProjectilesHandler.getInstance().getProjectileInfo(entity.getUniqueId());"]
   end
 ```
+
+<hr/>
+
+### Logic flow for thrown tridents triggering `PROJECTILE_HIT_BLOCK`
