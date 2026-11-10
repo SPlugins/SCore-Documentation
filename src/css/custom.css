@@ -47,3 +47,21 @@ a.menu__link[href*="how_to_menu"] {
   background-size: 18px 18px;
   background-position: 13px center;
 }
+
+.docusaurus-mermaid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.docusaurus-mermaid-container svg {
+  margin: 0 auto;
+}
+
+.mermaid-block {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  overflow-x: auto;
+}
