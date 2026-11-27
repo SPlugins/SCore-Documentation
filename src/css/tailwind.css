@@ -1,0 +1,19 @@
+/*
+ * Tailwind CSS v4 for Docusaurus.
+ *
+ * Preflight (Tailwind's CSS reset) is intentionally NOT imported: it would strip
+ * Infima's default styles for headings, lists, tables, etc. across every doc page.
+ * Only the theme tokens and the utility classes are loaded.
+ *
+ * Utilities are imported unlayered so they can override Infima's (also unlayered)
+ * styles instead of always losing to them.
+ */
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css";
+
+/* Make `dark:` utilities follow Docusaurus's light/dark toggle. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Classes can be used in .md/.mdx docs and React components. */
+@source "../../docs";
+@source "../../src";

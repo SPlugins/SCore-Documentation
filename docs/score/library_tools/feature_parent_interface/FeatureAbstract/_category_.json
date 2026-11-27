@@ -1,5 +1,6 @@
 {
   "label": "FeatureAbstract",
+  "className": "sidebar-cat-feature-abstract",
   "position": 4,
   "link": {
     "type": "generated-index",

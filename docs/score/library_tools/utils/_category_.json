@@ -1,5 +1,6 @@
 {
   "label": "Utils",
+  "className": "sidebar-cat-utils",
   "position": 1,
   "link": {
     "type": "generated-index",

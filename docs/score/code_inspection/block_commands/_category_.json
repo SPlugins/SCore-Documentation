@@ -1,5 +1,6 @@
 {
   "label": "Block Commands",
+  "className": "sidebar-cat-block-commands",
   "position": 1,
   "link": {
     "type": "generated-index",

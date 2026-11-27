@@ -1,5 +1,6 @@
 {
   "label": "Feature Parent Interface",
+  "className": "sidebar-cat-feature-parent-interface",
   "position": 4,
   "link": {
     "type": "generated-index",

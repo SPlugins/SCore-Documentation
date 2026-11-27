@@ -87,6 +87,121 @@ a.menu__link[href*="/executableitems/processes/refreshing_variable_value_in_item
 a.menu__link[href*="/executableitems/processes/string_to_ei_itemstack"] { background-image: url('/img/icons/executableitems/string.png'); }
 a.menu__link[href*="/executableitems/execution_flows/processing_dropping_and_picking_up_items"] { background-image: url('/img/icons/executableitems/dropper.png'); }
 
+/* SCore sidebar icons (static/img/icons/score) */
+a.menu__link[href*="/docs/score/intro"],
+a.menu__link[href*="/docs/score/faq"],
+a.menu__link[href*="/docs/score/debug_codes"],
+a.menu__link[href*="/docs/score/code_inspection/block_commands/MINEINCUBE"],
+a.menu__link[href*="/docs/score/code_inspection/block_commands/PLANT_IN_SQUARE"],
+a.menu__link[href*="/docs/score/code_inspection/block_commands/SMELT"],
+a.menu__link[href*="/docs/score/code_inspection/player_commands/ABSORPTION"],
+a.menu__link[href*="/docs/score/code_inspection/player_commands/EQUIPMENT_VISUAL_REPLACE"],
+a.menu__link[href*="/docs/score/code_inspection/projectile_settings/HitSound"],
+a.menu__link[href*="/docs/score/code_inspection/variables/wheretofind"],
+a.menu__link[href*="/docs/score/execution_flows/opening_ei_editor"],
+a.menu__link[href*="/docs/score/execution_flows/parsing-placeholders"],
+a.menu__link[href*="/docs/score/execution_flows/processing_nbt_to_items"],
+a.menu__link[href*="/docs/score/execution_flows/protocol_lib"],
+a.menu__link[href*="/docs/score/execution_flows/when-clicking-an-icon"],
+a.menu__link[href*="/docs/score/how_to/how_to_add_custom_FeatureSettingsCore_value"],
+a.menu__link[href*="/docs/score/how_to/how_to_add_languages"],
+a.menu__link[href*="/docs/score/how_to/how_to_create_or_modify_feature_editor"],
+a.menu__link[href*="/docs/score/library_tools/data_access/database_access"],
+a.menu__link[href*="/docs/score/library_tools/dependency_management"],
+a.menu__link[href*="/docs/score/library_tools/eventinfo"],
+a.menu__link[href*="/docs/score/library_tools/feature_guis"],
+a.menu__link[href*="/docs/score/library_tools/feature_parent_interface/FeatureAbstract/ItemsAdderFeature"],
+a.menu__link[href*="/docs/score/library_tools/feature_parent_interface/ListFeatureAbstract/ListUncoloredStringFeature"],
+a.menu__link[href*="/docs/score/library_tools/server_property_checkers"],
+a.menu__link[href*="/docs/score/library_tools/utils/attributeutils"],
+a.menu__link[href*="/docs/score/library_tools/utils/safebreak"],
+a.menu__link[href*="/docs/score/library_tools/utils/string-library"],
+a.menu__link[href*="/docs/score/library_tools/utils/string_setting"],
+a.menu__link[href*="/docs/score/library_tools/utils/toolslistmaterial"],
+a.menu__link[href*="/docs/score/plugin_internals/plugin_commands"] {
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 13px center;
+  image-rendering: pixelated; /* keep 16x16 Minecraft textures crisp */
+}
+
+a.menu__link[href*="/docs/score/intro"] { background-image: url('/img/icons/score/score.png'); image-rendering: auto; }
+a.menu__link[href*="/docs/score/faq"] { background-image: url('/img/icons/score/knowledge_book.png'); }
+a.menu__link[href*="/docs/score/debug_codes"] { background-image: url('/img/icons/score/spider_eye.png'); }
+a.menu__link[href*="/docs/score/code_inspection/block_commands/MINEINCUBE"] { background-image: url('/img/icons/score/iron_pickaxe.png'); }
+a.menu__link[href*="/docs/score/code_inspection/block_commands/PLANT_IN_SQUARE"] { background-image: url('/img/icons/score/wheat_seeds.png'); }
+a.menu__link[href*="/docs/score/code_inspection/block_commands/SMELT"] { background-image: url('/img/icons/score/furnace.png'); }
+a.menu__link[href*="/docs/score/code_inspection/player_commands/ABSORPTION"] { background-image: url('/img/icons/score/golden_apple.png'); }
+a.menu__link[href*="/docs/score/code_inspection/player_commands/EQUIPMENT_VISUAL_REPLACE"] { background-image: url('/img/icons/score/diamond_chestplate.png'); }
+a.menu__link[href*="/docs/score/code_inspection/projectile_settings/HitSound"] { background-image: url('/img/icons/score/music_disc_cat.png'); }
+a.menu__link[href*="/docs/score/code_inspection/variables/wheretofind"] { background-image: url('/img/icons/score/compass.png'); }
+a.menu__link[href*="/docs/score/execution_flows/opening_ei_editor"] { background-image: url('/img/icons/score/writable_book.png'); }
+a.menu__link[href*="/docs/score/execution_flows/parsing-placeholders"] { background-image: url('/img/icons/score/papi.png'); image-rendering: auto; }
+a.menu__link[href*="/docs/score/execution_flows/processing_nbt_to_items"] { background-image: url('/img/icons/score/name_tag.png'); }
+a.menu__link[href*="/docs/score/execution_flows/protocol_lib"] { background-image: url('/img/icons/score/ender_pearl.png'); }
+a.menu__link[href*="/docs/score/execution_flows/when-clicking-an-icon"] { background-image: url('/img/icons/score/item_frame.png'); }
+a.menu__link[href*="/docs/score/how_to/how_to_add_custom_FeatureSettingsCore_value"] { background-image: url('/img/icons/score/comparator.png'); }
+a.menu__link[href*="/docs/score/how_to/how_to_add_languages"] { background-image: url('/img/icons/score/globe_banner_pattern.png'); }
+a.menu__link[href*="/docs/score/how_to/how_to_create_or_modify_feature_editor"] { background-image: url('/img/icons/score/crafting_table.webp'); image-rendering: auto; }
+a.menu__link[href*="/docs/score/library_tools/data_access/database_access"] { background-image: url('/img/icons/score/bookshelf.png'); }
+a.menu__link[href*="/docs/score/library_tools/dependency_management"] { background-image: url('/img/icons/score/chain.png'); }
+a.menu__link[href*="/docs/score/library_tools/eventinfo"] { background-image: url('/img/icons/score/bell.png'); }
+a.menu__link[href*="/docs/score/library_tools/feature_guis"] { background-image: url('/img/icons/score/painting.png'); }
+a.menu__link[href*="/docs/score/library_tools/feature_parent_interface/FeatureAbstract/ItemsAdderFeature"] { background-image: url('/img/icons/score/bundle.png'); }
+a.menu__link[href*="/docs/score/library_tools/feature_parent_interface/ListFeatureAbstract/ListUncoloredStringFeature"] { background-image: url('/img/icons/score/paper.png'); }
+a.menu__link[href*="/docs/score/library_tools/server_property_checkers"] { background-image: url('/img/icons/score/observer.png'); }
+a.menu__link[href*="/docs/score/library_tools/utils/attributeutils"] { background-image: url('/img/icons/score/diamond_sword.png'); }
+a.menu__link[href*="/docs/score/library_tools/utils/safebreak"] { background-image: url('/img/icons/score/netherite_pickaxe.png'); }
+a.menu__link[href*="/docs/score/library_tools/utils/string-library"] { background-image: url('/img/icons/score/string.png'); }
+a.menu__link[href*="/docs/score/library_tools/utils/string_setting"] { background-image: url('/img/icons/score/lead.png'); }
+a.menu__link[href*="/docs/score/library_tools/utils/toolslistmaterial"] { background-image: url('/img/icons/score/iron_ingot.png'); }
+a.menu__link[href*="/docs/score/plugin_internals/plugin_commands"] { background-image: url('/img/icons/score/command_block.png'); }
+
+/* Sidebar category headers: distinct color so collapsible groups stand out from pages */
+:root {
+  --sidebar-category-color: #1d6b42;
+  --sidebar-category-bg: rgba(46, 133, 85, 0.1);
+}
+[data-theme='dark'] {
+  --sidebar-category-color: #4fddbf;
+  --sidebar-category-bg: rgba(37, 194, 160, 0.12);
+}
+
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible {
+  background-color: var(--sidebar-category-bg);
+  border-radius: 0.25rem;
+}
+
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link {
+  color: var(--sidebar-category-color);
+  font-weight: 700;
+}
+
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible:hover {
+  background-color: var(--ifm-menu-color-background-hover);
+}
+
+/* SCore sidebar category icons (className set in each _category_.json) */
+[class*="sidebar-cat-"] > .menu__list-item-collapsible > .menu__link {
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 13px center;
+  image-rendering: pixelated;
+}
+
+.sidebar-cat-block-commands > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/grass_block_side.png'); }
+.sidebar-cat-player-commands > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/totem_of_undying.png'); }
+.sidebar-cat-projectile-settings > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/arrow.png'); }
+.sidebar-cat-variables > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/experience_bottle.png'); }
+.sidebar-cat-data-access > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/barrel_top.png'); }
+.sidebar-cat-feature-parent-interface > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/oak_log.png'); }
+.sidebar-cat-feature-abstract > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/amethyst_shard.png'); }
+.sidebar-cat-list-feature-abstract > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/map.png'); }
+.sidebar-cat-menus > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/enchanting_table_top.png'); }
+.sidebar-cat-utils > .menu__list-item-collapsible > .menu__link { background-image: url('/img/icons/score/shears.png'); }
+
 .docusaurus-mermaid-container {
   display: flex;
   justify-content: center;

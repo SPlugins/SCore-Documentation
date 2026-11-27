@@ -39,7 +39,7 @@ const sidebarItemsGenerator: SidebarItemsGenerator = async ({
   const reorder = (list: SidebarItems): SidebarItems => {
     const mapped = list.map((item) =>
       item.type === 'category'
-        ? {...item, items: reorder(item.items)}
+        ? {...item, collapsed: true, items: reorder(item.items)} 
         : item,
     );
     return [
@@ -99,14 +99,26 @@ const config: Config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/tailwind.css', './src/css/custom.css'],
         },
         
       } satisfies Preset.Options,
     ],
   ],
 
-  plugins: [require.resolve('docusaurus-lunr-search')],
+  plugins: [
+    require.resolve('docusaurus-lunr-search'),
+    // Tailwind CSS v4 via PostCSS (styles live in src/css/tailwind.css)
+    function tailwindPlugin() {
+      return {
+        name: 'tailwindcss',
+        configurePostCss(postcssOptions) {
+          postcssOptions.plugins.push(require('@tailwindcss/postcss'));
+          return postcssOptions;
+        },
+      };
+    },
+  ],
 
   themeConfig: {
       mermaid: {
