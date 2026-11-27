@@ -130,7 +130,7 @@ flowchart TD
       -->
       D["Compare the thrown projectile's ItemStack with the held ItemStack in hand to figure out the slot number (ex: slot 0-8 or slot 40 which is offhand)"]
       -->
-      E["Create a new <code>ExecutableItemObject</code> object by passing the event's projectile's ItemStack."]
+      E["Create a new <code>ExecutableItemObject</code> object by passing the event's projectile's ItemStack. <hr/> "]
       -->
       F{"If the provided ItemStack is a valid ExecutableItem"}
 
@@ -138,9 +138,11 @@ flowchart TD
 
       F--"yes"-->H["ExecutableItem is valid"]
       -->
-      I["Insert ExecutableItem-specific metadata to the ExecutableItem's ItemStack"]
+      I["Insert ExecutableItem-specific metadata to the ExecutableItem's ItemStack including item usage"]
       -->
-      J[""]
+      J{"If ExecutableItem usage is greater than 1 or is -1"}
+
+      J--"yes"-->K["Clone the projectile's ItemStack to "]
     
     end
   end

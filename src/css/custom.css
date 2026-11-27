@@ -48,6 +48,43 @@ a.menu__link[href*="how_to_menu"] {
   background-position: 13px center;
 }
 
+/* ExecutableItems sidebar icons (static/img/icons/executableitems) */
+a.menu__link[href*="/executableitems/intro"],
+a.menu__link[href*="/executableitems/faq"],
+a.menu__link[href*="/executableitems/code_inspection/adding-new-activators"],
+a.menu__link[href*="/executableitems/code_inspection/adding_papi_ei_plchs"],
+a.menu__link[href*="/executableitems/code_inspection/refreshing_items"],
+a.menu__link[href*="/executableitems/library_tools/builditem_methods_ei"],
+a.menu__link[href*="/executableitems/plugin_internals/editor_activator_details"],
+a.menu__link[href*="/executableitems/plugin_internals/general_configuration"],
+a.menu__link[href*="/executableitems/plugin_internals/plugin_commands"],
+a.menu__link[href*="/executableitems/processes/build_ei_itemstack"],
+a.menu__link[href*="/executableitems/processes/import_itemstack_settings"],
+a.menu__link[href*="/executableitems/processes/processing_nbt_to_items"],
+a.menu__link[href*="/executableitems/processes/refreshing_variable_value_in_item_lore"],
+a.menu__link[href*="/executableitems/processes/string_to_ei_itemstack"] {
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: 13px center;
+  image-rendering: pixelated; /* keep 16x16 Minecraft textures crisp */
+}
+
+a.menu__link[href*="/executableitems/intro"] { background-image: url('/img/icons/executableitems/nether_star.png'); }
+a.menu__link[href*="/executableitems/faq"] { background-image: url('/img/icons/executableitems/knowledge_book.png'); }
+a.menu__link[href*="/executableitems/code_inspection/adding-new-activators"] { background-image: url('/img/icons/executableitems/redstone.png'); }
+a.menu__link[href*="/executableitems/code_inspection/adding_papi_ei_plchs"] { background-image: url('/img/icons/executableitems/papi.png'); image-rendering: auto; }
+a.menu__link[href*="/executableitems/code_inspection/refreshing_items"] { background-image: url('/img/icons/executableitems/clock.png'); }
+a.menu__link[href*="/executableitems/library_tools/builditem_methods_ei"] { background-image: url('/img/icons/executableitems/brick.png'); }
+a.menu__link[href*="/executableitems/plugin_internals/editor_activator_details"] { background-image: url('/img/icons/executableitems/spyglass.png'); }
+a.menu__link[href*="/executableitems/plugin_internals/general_configuration"] { background-image: url('/img/icons/executableitems/comparator.png'); }
+a.menu__link[href*="/executableitems/plugin_internals/plugin_commands"] { background-image: url('/img/icons/executableitems/command_block.png'); }
+a.menu__link[href*="/executableitems/processes/build_ei_itemstack"] { background-image: url('/img/icons/executableitems/smithing_table.png'); }
+a.menu__link[href*="/executableitems/processes/import_itemstack_settings"] { background-image: url('/img/icons/executableitems/hopper.png'); }
+a.menu__link[href*="/executableitems/processes/processing_nbt_to_items"] { background-image: url('/img/icons/executableitems/name_tag.png'); }
+a.menu__link[href*="/executableitems/processes/refreshing_variable_value_in_item_lore"] { background-image: url('/img/icons/executableitems/writable_book.png'); }
+a.menu__link[href*="/executableitems/processes/string_to_ei_itemstack"] { background-image: url('/img/icons/executableitems/string.png'); }
+
 .docusaurus-mermaid-container {
   display: flex;
   justify-content: center;
