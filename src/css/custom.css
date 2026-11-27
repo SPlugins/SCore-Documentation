@@ -62,7 +62,8 @@ a.menu__link[href*="/executableitems/processes/build_ei_itemstack"],
 a.menu__link[href*="/executableitems/processes/import_itemstack_settings"],
 a.menu__link[href*="/executableitems/processes/processing_nbt_to_items"],
 a.menu__link[href*="/executableitems/processes/refreshing_variable_value_in_item_lore"],
-a.menu__link[href*="/executableitems/processes/string_to_ei_itemstack"] {
+a.menu__link[href*="/executableitems/processes/string_to_ei_itemstack"],
+a.menu__link[href*="/executableitems/execution_flows/processing_dropping_and_picking_up_items"] {
   padding-left: 40px;
   background-repeat: no-repeat;
   background-size: 18px 18px;
@@ -84,6 +85,7 @@ a.menu__link[href*="/executableitems/processes/import_itemstack_settings"] { bac
 a.menu__link[href*="/executableitems/processes/processing_nbt_to_items"] { background-image: url('/img/icons/executableitems/name_tag.png'); }
 a.menu__link[href*="/executableitems/processes/refreshing_variable_value_in_item_lore"] { background-image: url('/img/icons/executableitems/writable_book.png'); }
 a.menu__link[href*="/executableitems/processes/string_to_ei_itemstack"] { background-image: url('/img/icons/executableitems/string.png'); }
+a.menu__link[href*="/executableitems/execution_flows/processing_dropping_and_picking_up_items"] { background-image: url('/img/icons/executableitems/dropper.png'); }
 
 .docusaurus-mermaid-container {
   display: flex;
@@ -102,3 +104,26 @@ a.menu__link[href*="/executableitems/processes/string_to_ei_itemstack"] { backgr
   background: var(--ifm-background-surface-color);
   overflow-x: auto;
 }
+/* ===== Denser reading for reference-heavy docs ===== */
+:root {
+  --ifm-font-size-base: 15px;          /* default 16px; try 14px for very dense */
+  --ifm-line-height-base: 1.55;        /* default 1.65 */
+  --ifm-code-font-size: 88%;
+  --ifm-spacing-vertical: 0.85rem;     /* paragraph/list spacing */
+  --ifm-heading-margin-bottom: 0.6rem;
+}
+
+/* Docs pages override heading sizes separately */
+.markdown h1:first-child { --ifm-h1-font-size: 2.1rem; }
+.markdown > h2 { --ifm-h2-font-size: 1.5rem; margin-top: 2rem; }
+.markdown > h3 { --ifm-h3-font-size: 1.2rem; margin-top: 1.5rem; }
+.markdown > h4 { --ifm-h4-font-size: 1rem; }
+
+/* Tighter tables (config/option tables) */
+.markdown table { font-size: 0.9em; }
+.markdown table th,
+.markdown table td { padding: 0.4rem 0.7rem; }
+
+/* Slightly smaller sidebar and TOC */
+.menu { font-size: 0.9rem; }
+.table-of-contents { font-size: 0.8rem; }
